@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  
+  div(class="wrapper")
+    form(action='/board/add' method='post')
+      table(class='add')
+        colgroup
+          col(width="15%")
+          col(width="85%")
+        tr
+          th 제 목
+          td: input(type='text' name='title' size=30)
+        tr
+          th 글쓴이
+          td: input(type='text' name='author_id')
+        tr
+          th 내 용
+          td(class="last_td" colspan=2 style="height: 250px; vertical-align: top;"): textarea(name='description' rows=15 cols=85) 
+      input(class="btn" type='submit' value='전 송')

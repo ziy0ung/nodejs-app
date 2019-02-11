@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  div(class='wrapper')
+    table(class='view')
+      colgroup
+        col(width="15%")
+        col(width="85%")
+      tr
+        th 제 목
+        td(style="font-weight: bold")= board.title
+      tr
+        th 작성자
+        td= board.author_id
+      tr
+        th 작성일
+        td= board.created
+      tr
+        td(colspan=2 style="height: 190px; vertical-align: top;")= board.description
+
+    div(class="btn" style="left: 0;")
+      a(href='/board/add') 글쓰기
+
+    div(class="btn")
+      a(href='/board/'+board.id+'/edit') 글수정
+

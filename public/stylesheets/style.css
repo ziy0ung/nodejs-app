@@ -1,0 +1,230 @@
+body {
+  margin-top: 5%;
+  padding: 0 2%;
+  height: 100%;
+  font-size: 13px;
+  background: #F9F7F1;
+  color: black;
+  text-align: center;
+}
+
+ul li{list-style: none;}
+a{text-decoration: none; color: black;}
+a:link{text-decoration: none;}
+a:visited{text-decoration: none;}
+a:active{text-decoration: none;}
+
+.logo {
+	display: inline-block;
+  margin-bottom: 50px;
+}
+
+table {
+    margin-bottom: 25px;
+    width: inherit;
+}
+
+.wrapper{
+  position: relative;
+    width: 680px;
+    display: inline-block;
+}
+/*
+.board {
+    margin-bottom: 25px;
+    width: inherit;
+}*/
+
+.board thead tr th{
+    height: 36px;
+    color: #fff;
+    font-weight: bold;
+    background: #f8b832;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.board tbody tr td {
+    height: 18px;
+    padding: 10px;
+    text-align: center;
+    line-height: 18px;
+    border-bottom: 1px solid #ded3d3;
+    vertical-align: middle;
+}
+
+.board tbody tr td.t_left{ text-align: left;}
+
+/* View page */
+.wrapper.board{
+    width: 750px;
+}
+
+/*.view{
+    margin-bottom: 25px;
+    width: inherit;
+}*/
+
+.view tr{
+	width: inherit;
+	
+}
+
+.view tr th{
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+    background: #f8b832;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.view tr td{
+    height: 18px;
+    padding: 10px;
+    text-align: left;
+    line-height: 18px;
+    border-bottom: 1px solid #ded3d3;
+    vertical-align: middle;
+}
+
+
+.view .input{
+    margin-top: 12px;
+}
+
+.view .input input{
+    float: right;
+}
+
+.view .input input.left{
+    float: left;
+}
+
+.view .input input.delete{
+    margin-left: 5px;
+}
+
+.view .input input[type="button"]{
+    height: 36px;
+    font-size: 14px;
+    background: #949494;
+}
+
+
+/* Edit page */
+.edit{
+   margin-bottom: 25px;
+    width: 100%;
+}
+
+.edit tr th{
+    color: #fff;
+    font-weight: bold;
+    background: #f8b832;
+    vertical-align: middle;
+    border-radius: 5px;
+    line-height: 30px;
+    height: 37px;
+}
+
+.edit tr td {
+    padding: 3px;
+    border-bottom: 1px solid #d3d3d3;
+    vertical-align: middle;
+    height: 30px;
+    text-align: left;
+}
+
+.edit tr td input{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 13px;
+    color: gray;
+    padding-left: 5px;
+}
+
+textarea {
+    width: 100%;
+    outline: none;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 13px;
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 5px;
+}
+
+input[type="text"]:focus, textarea:focus{
+    border: 2px solid #C9C6BC;
+}
+
+/* Add page */
+.add tr th{
+    color: #fff;
+    font-weight: bold;
+    background: #f8b832;
+    vertical-align: middle;
+    border-radius: 5px;
+    line-height: 30px;
+    height: 37px;
+  }
+
+.add tr td {
+  padding: 3px;
+    border-bottom: 1px solid #d3d3d3;
+
+}
+
+.add tr td input{
+  width: 100%;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    border: 2px solid #ddd;
+    
+    
+    border-radius: 5px;
+    font-size: 13px;
+    color: gray;
+    padding-left: 5px;
+
+}
+
+.add tr td.last_td{
+    border-bottom: none;
+}
+
+
+
+/* Button */
+.btn{
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+      width: 70px;
+    height: 30px;
+    border: 1.2px solid #f8b832;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn a{
+  font-weight: 700;
+ color: #f8b832;
+    line-height: 30px;
+}
+
+input.btn {
+
+  background-color: transparent;
+  color: #f8b832;
+  font-weight: 700;
+  height: 32px;
+  line-height: 32px;
+}

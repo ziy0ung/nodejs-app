@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  
+  div(class="wrapper board")
+    table(class='board')
+      colgroup
+        col(width="8%")
+        col(width="60%")
+        col(width="20%")
+        col(width="12%")
+      thead
+        tr
+          th(scope="col") 번 호
+          th(scope="col") 제 목
+          th(scope="col") 작성일
+          th(scope="col") 작성자
+      tbody
+        each board in boards
+          tr
+            td
+              a(href='/board/'+board.id)= board.id
+            td(style="text-align: left;")
+              a(href='/board/'+board.id)= board.title
+            td
+              a(href='/board/'+board.id)= board.created
+            td
+              a(href='/board/'+board.id)= board.author_id
+
+      div(class="btn")
+        a(href='/board/add') 글쓰기
